@@ -77,7 +77,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin: 1rem auto;
+  line-height: 45px;
 }
 
 .nav-container .logo {
@@ -91,4 +92,33 @@ body {
 .nav-container .logo img.logo {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+}
+
+.nav-container a:link {
+  text-decoration: none;
+}
+
+.nav-container a.blog {
+  color: #fff;
+  font-size: 1.425rem;
+}
+
+.countdown-container {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.count-down {
+  max-width: 140px;
+  margin: 1rem auto;
+}
+
+.count-down .heading-text {
+  font-family: 'TTCommons-Bold', sans-serif;
+  font-size: 2.525rem;
+}
+
+.count-down .desc-text {
+  font-family: 'TTCommons-Medium', sans-serif;
+  font-size: 1rem;
 }
