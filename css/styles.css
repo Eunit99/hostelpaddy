@@ -62,15 +62,13 @@
   src: url(../fonts/TTCommons-Regular.ttf)
 }
 
-
-
-
 body {
   min-height: 100vh;
   color: #fff !important;
-  background: url(../assets/bg.svg);
+  background-image: url(../assets/bg.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #212224 !important;
   font-family: 'TTCommons-Bold', sans-serif !important;
 }
 
