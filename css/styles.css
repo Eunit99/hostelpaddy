@@ -126,6 +126,7 @@ body {
 
 .coming-soon-content {
   margin-top: 1rem;
+  max-height: 600px;
 }
 
 .coming-soon-content .website {
@@ -163,7 +164,7 @@ body {
 .input-field-area .form-control input,
 .input-field-area .form-control button {
   margin: 0;
-  height: 100%;
+  height: 50px;
 }
 
 .input-field-area .form-control input.input {
@@ -202,6 +203,69 @@ body {
 }
 
 .copyright-area {
-  margin: 2rem auto;
   color: rgb(129, 129, 129);
+  margin: 2rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-container {
+    margin: 2rem auto 0;
+  }
+
+  .count-down .heading-text {
+    font-size: 3.425rem;
+  }
+
+  .count-down .desc-text {
+    font-size: 1.325rem;
+  }
+
+  .coming-soon-content {
+    margin-top: 4rem;
+  }
+
+  .coming-soon-content .website {
+    font-size: 2.825rem;
+    margin-bottom: 1.225rem;
+  }
+
+  .coming-soon-content .launching-soon {
+    font-size: 3.825rem;
+    font-weight: 900;
+  }
+
+  .coming-soon-content .newsletter-description {
+    font-size: 1.625rem;
+  }
+
+  .input-field-area .form-control input,
+  .input-field-area .form-control button {
+    margin: 0;
+    height: 70px;
+  }
+
+  .input-field-area .form-control input.input {
+    padding: 1.425rem;
+    width: 300px;
+  }
+
+  .input-field-area .form-control button.submit {
+    padding: 1.425rem;
+  }
+
+  .input-field-area .form-control button.submit .bell {
+    width: 14px;
+    height: 14px;
+  }
+
+  .newsletter-container {
+    margin: 5rem auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .coming-soon-content .coming-soon-image {
+    display: block;
+  }
 }
