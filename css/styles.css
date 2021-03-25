@@ -4,6 +4,91 @@
   padding: 0;
 }
 
+
+/* Custom Fonts */
+@import url(../fonts/TTCommons-Black.ttf);
+@import url(../fonts/TTCommons-BlackItalic.ttf);
+@import url(../fonts/TTCommons-Bold.ttf);
+@import url(../fonts/TTCommons-BoldItalic.ttf);
+@import url(../fonts/TTCommons-DemiBold.ttf);
+@import url(../fonts/TTCommons-DemiBoldItalic.ttf);
+@import url(../fonts/TTCommons-ExtraBold.ttf);
+@import url(../fonts/TTCommons-Medium.ttf);
+@import url(../fonts/TTCommons-Regular.ttf);
+
+@font-face {
+  font-family: 'TTCommons-Black';
+  src: url(../fonts/TTCommons-Black.ttf)
+}
+
+@font-face {
+  font-family: 'TTCommons-BlackItalic';
+  src: url(../fonts/TTCommons-BlackItalic.ttf)
+}
+
+@font-face {
+  font-family: 'TTCommons-Bold';
+  src: url(../fonts/TTCommons-Bold.ttf)
+}
+
+@font-face {
+  font-family: 'TTCommons-BoldItalic';
+  src: url(../fonts/TTCommons-BoldItalic.ttf)
+}
+
+@font-face {
+  font-family: 'TTCommons-DemiBold';
+  src: url(../fonts/TTCommons-DemiBold.ttf)
+}
+
+@font-face {
+  font-family: 'TTCommons-DemiBoldItalic';
+  src: url(../fonts/TTCommons-DemiBoldItalic.ttf)
+}
+
+@font-face {
+  font-family: 'TTCommons-ExtraBold';
+  src: url(../fonts/TTCommons-ExtraBold.ttf)
+}
+
+@font-face {
+  font-family: 'TTCommons-Medium';
+  src: url(../fonts/TTCommons-Medium.ttf)
+}
+
+@font-face {
+  font-family: 'TTCommons-Regular';
+  src: url(../fonts/TTCommons-Regular.ttf)
+}
+
+
+
+
 body {
   min-height: 100vh;
+  color: #fff !important;
+  background: url(../assets/bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'TTCommons-Bold', sans-serif !important;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.nav-container .logo {
+  justify-content: start;
+}
+
+.nav-container .blog-text {
+  justify-content: end;
+}
+
+.nav-container .logo img.logo {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
