@@ -89,8 +89,8 @@ body {
 }
 
 .nav-container .logo img.logo {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
+  max-height: 48px;
+  max-width: 48px;
 }
 
 .nav-container a:link {
