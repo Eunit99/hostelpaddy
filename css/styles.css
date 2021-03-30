@@ -245,6 +245,7 @@ body {
   .input-field-area .form-control input.input {
     padding: 1.425rem;
     width: 300px;
+    color: #fff;
   }
 
   .input-field-area .form-control button.submit {
