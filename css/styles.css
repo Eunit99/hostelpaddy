@@ -64,12 +64,15 @@
 
 body {
   min-height: 100vh;
-  color: #fff !important;
+  font-family: 'TTCommons-Bold', sans-serif !important;
+}
+
+.body-image {
   background-image: url(../assets/bg.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #212224 !important;
-  font-family: 'TTCommons-Bold', sans-serif !important;
+  color: #fff !important;
 }
 
 .nav-container {
@@ -268,3 +271,39 @@ body {
     display: block;
   }
 }
+
+
+
+/**
+ *
+ * Auth pages start
+ *
+ */
+
+a.login-button-text {
+  text-decoration: none
+}
+
+.login-button-text {
+  color: #000249;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 2px solid #000249;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+
+.login-button-text:hover {
+  background-color: #000249;
+  color: #fff;
+}
+
+/**
+ *
+ * Auth pages End
+ *
+ */
