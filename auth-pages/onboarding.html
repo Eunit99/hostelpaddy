@@ -70,9 +70,12 @@
 
     <!-- Vendor stylesheets -->
     <link type="text/css" rel="stylesheet" href="../vendor/animate/css/animate.min.css">
-    <link type="text/css" rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="../vendor/reset/css/reset.min.css">
     <link type="text/css" rel="stylesheet" href="../vendor/normalize/css/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="../vendor/linearicons/css/linearicons.min.css" />
+    <link type="text/css" rel="stylesheet" href="../vendor/fontawesome/css/fontawesome.min.css" />
+
   </head>
 
   <body>
@@ -81,7 +84,7 @@
       <div class="row">
 
         <!-- image visible only in large screens -->
-        <div class="col-md-4 col-lg-4 side-image">
+        <div class="col-lg-4 side-image">
           <div class="heading-title">
             <h1>Your No. 1 solution for hostel accommodation</h1>
           </div>
@@ -92,15 +95,48 @@
         <!-- /image visible only in large screens -->
 
 
-        <div class="col-12 col-md-8 col-lg-8">
+        <div class="col-12 col-md-12 col-lg-8">
+
+          <!-- nav-container -->
           <div class="nav-container">
-            <div class="logo">
-              <img src="../img/logo.svg" alt="Logo" class="logo img-fluid">
-            </div>
+            <a href="../index.html" class="logo-link">
+              <div class="logo">
+                <img src="../img/logo.svg" alt="Logo" class="logo img-fluid">
+              </div>
+            </a>
             <div class="login-button">
               <a href="signin.html" class="login-button-text">Login</a>
             </div>
           </div>
+          <!-- /nav-container -->
+
+          <!-- Onboarding content -->
+          <div class="onboard-container">
+            <div class="onboard-title">
+                Select an account type
+            </div>
+
+            <!-- Student onboard -->
+            <a href="onboard/student/sign-up.html" class="onboard-student">
+              <div class="onboard onboard-student">
+                <div class="icon">
+                  <!-- <i class="lnr lnr-graduation-hat"></i> -->
+                  <i class="fa fa-graduation-cap"></i>
+                </div>
+                <div class="onboard-text">
+                  <div class="onboard-text-title">
+                    Sign up as a Student
+                  </div>
+                  <div class="onboard-text-desc">
+                    Get a personalised experience. Save, filter and easily search for a hostel
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- /Student onboard -->
+
+          </div>
+          <!-- /Onboarding content -->
         </div>
       </div>
     </div>

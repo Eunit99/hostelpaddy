@@ -324,6 +324,10 @@ body {
  *
  */
 
+.side-image {
+  display: none;
+}
+
 a.login-button-text {
   text-decoration: none
 }
@@ -363,15 +367,52 @@ a.login-button-text {
 }
 
 .heading-title {
-  font-size: 2rem;
+  font-size: 1.825rem;
   margin-top: 10rem;
   font-family: "Asap-Medium", sans-serif;
+  word-wrap: normal;
 }
 
 .desc-text {
-  font-size: 1.825rem;
+  font-size: 1.625rem;
   font-family: "Asap-Regular", sans-serif;
   font-weight: 400;
+}
+
+.onboard-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+a.onboard-student:link {
+  text-decoration: none;
+}
+
+.onboard {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  height: 200px;
+  padding: 18px 12px;
+}
+
+.onboard-text-title {
+  color: #000249;
+  font-size: 1.625rem;
+}
+
+/* Auth pages responsiveness */
+
+@media screen and (min-width: 1024px) {
+
+  .side-image {
+    display: block;
+  }
 }
 
 /**
