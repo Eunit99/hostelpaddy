@@ -41,7 +41,7 @@
 }
 
 a:hover {
-  color: #4f4f4f;
+  color: #797a9d;
 }
 
 .nav-link {
@@ -64,7 +64,7 @@ a:hover {
 }
 
 .navbar-toggler .fa-bars:hover {
-  color: #4f4f4f;
+  color: #797a9d;
 }
 
 /*Button styling*/
@@ -83,9 +83,9 @@ a:hover {
 }
 
 .btn-primary:hover {
-  background-color: #4f4f4f;
-  border: 1px solid #4f4f4f;
-  color: #000249;
+  background-color: #797a9d;
+  border: 1px solid #797a9d;
+  color: #fff;
 }
 
 
@@ -162,7 +162,7 @@ a:hover {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  color: #4f4f4f;
+  color: #797a9d;
 }
 
 .house-owners {
@@ -183,7 +183,7 @@ a:hover {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  color: #4f4f4f;
+  color: #797a9d;
 }
 
 .learn-more-btn {
@@ -229,7 +229,7 @@ ul {
   font-weight: normal;
   font-size: 18px;
   line-height: 155.1%;
-  color: #4f4f4f;
+  color: #797a9d;
 }
 
 .subscribe {
@@ -281,8 +281,16 @@ footer .footer-icon {
   font-size: 24px;
 }
 
+footer .footer-icon:hover {
+  color: #000249;
+}
+
 footer .social *+* {
   margin-left: 16px;
+}
+
+footer a.social-link {
+  text-decoration: none;
 }
 
 .footer-txt {
