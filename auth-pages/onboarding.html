@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HostelPaddy - Onboarding</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HostelPaddy - Onboarding</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no,
+            width=device-width, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="title" content="HostelPaddy - Onboarding">
+    <meta name="author" content="@Eunit">
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="theme-color" content="#0f4392">
+    <link rel="manifest" href="../manifest.json">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0f4392">
+    <link rel="apple-touch-icon" href="img/logo.png">
+    <meta name="msapplication-TileColor" content="#0f4392">
+    <meta name="msapplication-TileImage" content="img/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@hostelpaddy">
+    <meta name="twitter:creator" content="@eunit99">
+    <meta name="twitter:title" content=" ">
+    <meta name="twitter:description" content=" ">
+    <meta name="twitter:image" content="img/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Add to Home">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="HostelPaddy - Onboarding">
+    <meta property="og:url" content="https://hostelpaddy.com">
+    <meta property="og:description" content=" ">
+    <meta property="og:site_name" content=" ">
+    <meta property="og:image" content="img/logo.png">
+    <meta name="og:locale" content="en_UK">
+    <meta name="fb:admins" content="">
+    <meta name="og:type" content="website">
+    <meta property="article:publisher" content="https://facebook.com/hostelpaddy1">
+    <meta property="og:image:secure_url" content="img/logo.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" href="img/logo.png">
+    <link rel="apple-touch-icon" href="img/logo.png">
+    <link rel="mask-icon" href="img/logo.png" color="#0f4392">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <!-- Site Verifications -->
+    <meta name="google-site-verification" content="" />
+    <meta name="google-analytics" content="UA-XXXXXX-X">
+
+    <!-- Default Stylesheet -->
+    <link type="text/css" rel="stylesheet" href="../css/styles.css">
+
+    <!-- Vendor stylesheets -->
+    <link type="text/css" rel="stylesheet" href="../vendor/animate/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../vendor/reset/css/reset.min.css">
+    <link type="text/css" rel="stylesheet" href="../vendor/normalize/css/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="../vendor/linearicons/css/linearicons.min.css" />
+    <link type="text/css" rel="stylesheet" href="../vendor/fontawesome/css/fontawesome.min.css" />
+
+  </head>
+
+  <body>
+    <!-- Nav container -->
+    <div class="container-fluid mx-0">
+      <div class="row">
+
+        <!-- image visible only in large screens -->
+        <div class="col-lg-4 side-image">
+          <div class="heading-title">
+            <h1>Your No. 1 solution for hostel accommodation</h1>
+          </div>
+          <div class="desc-text mt-3">
+            <p>An innovating way to relieve you of the hassle of hostel-hunting</p>
+          </div>
+        </div>
+        <!-- /image visible only in large screens -->
+
+
+        <div class="col-12 col-md-12 col-lg-8">
+
+          <!-- nav-container -->
+          <div class="nav-container">
+            <a href="../index.html" class="logo-link">
+              <div class="logo">
+                <img src="../img/logo.svg" alt="Logo" class="logo img-fluid">
+              </div>
+            </a>
+            <div class="login-button">
+              <a href="signin.html" class="login-button-text">Login</a>
+            </div>
+          </div>
+          <!-- /nav-container -->
+
+          <!-- Onboarding content -->
+          <div class="onboard-container">
+            <div class="onboard-title">
+                Select an account type
+            </div>
+
+            <!-- Student onboard -->
+            <a href="onboard/student/sign-up.html" class="onboard-student">
+              <div class="onboard onboard-student">
+                <div class="icon">
+                  <!-- <i class="lnr lnr-graduation-hat"></i> -->
+                  <i class="fa fa-graduation-cap"></i>
+                </div>
+                <div class="onboard-text">
+                  <div class="onboard-text-title">
+                    Sign up as a Student
+                  </div>
+                  <div class="onboard-text-desc">
+                    Get a personalised experience. Save, filter and easily search for a hostel
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- /Student onboard -->
+
+          </div>
+          <!-- /Onboarding content -->
+        </div>
+      </div>
+    </div>
+    <!-- /Nav container -->
+  </body>
+
+</html>
