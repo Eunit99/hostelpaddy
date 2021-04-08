@@ -111,6 +111,12 @@ body {
   font-family: 'TTCommons-Bold', sans-serif !important;
 }
 
+/* Utilities */
+
+.bold {
+  font-weight: bold !important;
+}
+
 .body-image {
   background-image: url(../assets/bg.svg);
   background-size: cover;

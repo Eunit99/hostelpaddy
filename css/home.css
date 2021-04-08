@@ -1,58 +1,79 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Asap", sans-serif;
 }
+
 .padding {
   padding-bottom: 2rem;
 }
+
 /*Nav-bar styling*/
 .signup {
-  display: flex;
-  justify-content: right;
   position: absolute;
   right: 80px;
+  padding: 8px 24px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
+
 .nav-item {
   position: static;
   display: flex;
+  margin-left: 1.625rem;
 }
+
 .navbar-brand {
   margin-right: 20rem;
 }
+
 .navbar-nav ul li {
   padding: 0 10px;
 }
+
 .navbar-nav ul a {
   font-weight: bold;
 }
+
 a:hover {
   color: #4f4f4f;
 }
+
 .nav-link {
   font-size: 1.1em !important;
   color: #000249;
+  font-weight: bold;
 }
+
 .navbar-brand img {
   height: 50px;
 }
+
 .navbar-toggler {
   border-color: #000249;
 }
+
 .navbar-toggler .fa-bars {
   color: #000249;
   font-size: 28px;
 }
+
 .navbar-toggler .fa-bars:hover {
   color: #4f4f4f;
 }
+
 /*Button styling*/
 .btn-primary {
   background-color: #000249;
   border: 1px solid #000249;
   border-radius: 8px;
 }
+
 .btn-lg {
   font-size: 20px;
   font-weight: bold;
@@ -60,26 +81,38 @@ a:hover {
   text-align: center;
   padding: 15px 60px;
 }
+
 .btn-primary:hover {
   background-color: #4f4f4f;
   border: 1px solid #4f4f4f;
   color: #000249;
 }
+
+
+/* Header */
+
+.header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 /*Intro styling*/
 .intro {
   background-image: url("../home-img/background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 9rem 4rem 4rem 8rem;
+  padding: 10rem 4rem 8rem;
 }
+
 .intro-img {
   position: absolute;
   left: 32%;
-  top: -21%;
+  top: -10%;
   bottom: 82.77%;
   overflow: hidden;
   height: 155%;
 }
+
 .intro h1 {
   font-size: 48px;
   font-weight: bold;
@@ -88,6 +121,7 @@ a:hover {
   color: #fff;
   padding-bottom: 1rem;
 }
+
 .intro p {
   font-style: normal;
   font-weight: 600;
@@ -98,8 +132,13 @@ a:hover {
 
 .solution {
   padding-top: 4rem;
-  width: 50%;
+  width: 80%;
 }
+
+.solution h1 {
+  font-size: 48px;
+}
+
 .info {
   background-color: #f9faf9;
   padding-top: 5rem;
@@ -109,6 +148,7 @@ a:hover {
   padding: 0 4rem 0 4rem;
   background-color: transparent;
 }
+
 .students h1 {
   font-style: normal;
   font-weight: 600;
@@ -116,6 +156,7 @@ a:hover {
   line-height: 120%;
   color: #242423;
 }
+
 .students p {
   font-family: Asap;
   font-style: normal;
@@ -128,6 +169,7 @@ a:hover {
   padding: 5rem 4rem 0 4rem;
   background-color: transparent;
 }
+
 .house-owners h1 {
   font-style: normal;
   font-weight: 600;
@@ -135,6 +177,7 @@ a:hover {
   line-height: 120%;
   color: #242423;
 }
+
 .house-owners p {
   font-family: Asap;
   font-style: normal;
@@ -142,24 +185,29 @@ a:hover {
   font-size: 18px;
   color: #4f4f4f;
 }
-.learn-more-btn{
+
+.learn-more-btn {
   background-color: transparent;
   color: #000249;
   border: 3px solid;
 }
-.learn-more-btn:hover{
+
+.learn-more-btn:hover {
   background-color: #000249;
   color: #fff;
   border: 3px solid;
 }
-ul{
+
+ul {
   list-style-image: url("../home-img/check\ icon.png");
   margin-left: 20px;
 }
+
 .features {
   background-color: #fff;
   width: 75%;
 }
+
 .features h2 {
   color: #dd1717;
   font-style: normal;
@@ -167,6 +215,7 @@ ul{
   font-size: 20px;
   line-height: 145%;
 }
+
 .features h1 {
   color: #5da3d7;
   font-style: normal;
@@ -174,6 +223,7 @@ ul{
   font-size: 31px;
   line-height: 128.1%;
 }
+
 .features p {
   font-style: normal;
   font-weight: normal;
@@ -181,10 +231,12 @@ ul{
   line-height: 155.1%;
   color: #4f4f4f;
 }
+
 .subscribe {
   background-color: #fff;
   padding: 4rem 12rem;
 }
+
 .subscribe h1 {
   font-style: normal;
   font-weight: 600;
@@ -192,6 +244,7 @@ ul{
   line-height: 128.1%;
   color: #242423;
 }
+
 .subscribe h2 {
   font-style: normal;
   font-weight: 600;
@@ -199,18 +252,21 @@ ul{
   line-height: 130.6%;
   color: #242423;
 }
+
 footer {
   background-color: #f9faf9;
   padding-top: 5rem;
   padding-left: 5rem;
 }
+
 footer a {
   color: #242423;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 900;
   font-size: 18px;
   line-height: 155.1%;
 }
+
 footer h5 {
   color: #c4c4c4;
   padding-bottom: 1rem;
@@ -219,6 +275,16 @@ footer h5 {
   font-size: 18px;
   line-height: 155.1%;
 }
+
+footer .footer-icon {
+  color: #5da3d7;
+  font-size: 24px;
+}
+
+footer .social *+* {
+  margin-left: 16px;
+}
+
 .footer-txt {
   font-style: normal;
   font-weight: normal;
