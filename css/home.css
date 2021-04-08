@@ -29,7 +29,35 @@
 }
 
 .navbar-brand {
-  margin-right: 20rem;
+  /* margin-right: 20rem; */
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  display: block !important;
+  width: auto;
+  height: auto;
+}
+
+.navbar-toggler.toggler {
+  border: 0;
+  background-color: #5DA3D7;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.navbar-toggler.toggler:hover,
+.navbar-toggler.toggler:active {
+  color: #000249;
+  background-color: #5DA3D7;
+}
+
+.navbar-toggler.toggler .fa-bars {
+  color: #fff;
 }
 
 .navbar-nav ul li {
@@ -58,10 +86,6 @@ a:hover {
   border-color: #000249;
 }
 
-.navbar-toggler .fa-bars {
-  color: #000249;
-  font-size: 28px;
-}
 
 .navbar-toggler .fa-bars:hover {
   color: #797a9d;
@@ -75,11 +99,10 @@ a:hover {
 }
 
 .btn-lg {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   line-height: 30px;
   text-align: center;
-  padding: 15px 60px;
 }
 
 .btn-primary:hover {
@@ -92,8 +115,8 @@ a:hover {
 /* Header */
 
 .header {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.525rem;
+  padding-bottom: 0.525rem;
 }
 
 /*Intro styling*/
@@ -101,7 +124,7 @@ a:hover {
   background-image: url("../home-img/background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 10rem 4rem 8rem;
+  padding: 2rem;
 }
 
 .intro-img {
@@ -114,7 +137,6 @@ a:hover {
 }
 
 .intro h1 {
-  font-size: 48px;
   font-weight: bold;
   font-style: normal;
   line-height: 120%;
@@ -135,10 +157,6 @@ a:hover {
   width: 80%;
 }
 
-.solution h1 {
-  font-size: 48px;
-}
-
 .info {
   background-color: #f9faf9;
   padding-top: 5rem;
@@ -152,7 +170,6 @@ a:hover {
 .students h1 {
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
   line-height: 120%;
   color: #242423;
 }
@@ -166,14 +183,12 @@ a:hover {
 }
 
 .house-owners {
-  padding: 5rem 4rem 0 4rem;
   background-color: transparent;
 }
 
 .house-owners h1 {
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
   line-height: 120%;
   color: #242423;
 }
@@ -234,7 +249,6 @@ ul {
 
 .subscribe {
   background-color: #fff;
-  padding: 4rem 12rem;
 }
 
 .subscribe h1 {
@@ -255,8 +269,8 @@ ul {
 
 footer {
   background-color: #f9faf9;
-  padding-top: 5rem;
-  padding-left: 5rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
 }
 
 footer a {
@@ -299,4 +313,43 @@ footer a.social-link {
   font-size: 18px;
   line-height: 155.1%;
   text-align: left;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .intro {
+    padding: 10rem 4rem 8rem;
+  }
+
+  .intro h1 {
+    font-size: 48px;
+  }
+
+  .solution h1 {
+    font-size: 48px;
+  }
+
+
+  .students h1 {
+    font-size: 48px;
+  }
+
+
+  .house-owners h1 {
+    font-size: 48px;
+  }
+
+
+  .subscribe {
+    padding: 4rem 12rem;
+  }
+
+  .btn-lg {
+    font-size: 20px;
+    padding: 15px 60px;
+  }
+
+  footer {
+    padding-top: 2rem;
+  }
 }
