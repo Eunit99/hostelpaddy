@@ -130,7 +130,7 @@ body {
 .enabled-state {
   background-color: #000249;
   color: #fff;
-  cursor: cursor;
+  cursor: pointer;
 }
 
 .button-style {
@@ -488,6 +488,16 @@ a.onboard-link:link {
   background-color: #000249;
   color: #fff;
 }
+
+a.signup-link {
+  text-decoration: none;
+}
+
+a.signup-link:hover {
+  color: #000249;
+}
+
+
 
 @media screen and (min-width: 768px) {
   .nav-container {
