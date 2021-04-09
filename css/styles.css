@@ -108,7 +108,7 @@
 
 body {
   min-height: 100vh;
-  font-family: 'TTCommons-Bold', sans-serif !important;
+  font-family: 'Asap-Regular', sans-serif !important;
 }
 
 /* Utilities */
@@ -123,6 +123,7 @@ body {
   background-repeat: no-repeat;
   background-color: #212224 !important;
   color: #fff !important;
+  font-family: 'TTCommons-Bold', sans-serif !important;
 }
 
 .nav-container {
@@ -293,6 +294,11 @@ a.login-button-text {
   color: #fff;
 }
 
+.back-button {
+  color: #000249;
+  cursor: pointer;
+}
+
 .side-image {
   background: url(../assets/side-image-auth-page.svg);
   background-size: cover;
@@ -329,6 +335,12 @@ a.login-button-text {
   text-align: center;
 }
 
+.sign-up-onboard-text {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-around;
+}
+
 a.onboard-link:link {
   text-decoration: none;
 }
@@ -353,7 +365,10 @@ a.onboard-link:link {
 }
 
 .onboard-title {
-  font-size: 1.625rem;
+  font-size: 1.425rem;
+  line-height: 3rem;
+  font-family: 'Asap-Bold', sans-serif !important;
+font-weight: 600;
 }
 
 .onboard .onboard-text {
@@ -374,7 +389,7 @@ a.onboard-link:link {
 }
 
 .icon {
-  width: 80px;
+  width: 60px;
   padding: 0.485rem 0.2rem;
   color: #000249;
   background-color: #fff;
@@ -390,6 +405,41 @@ a.onboard-link:link {
   margin: auto;
 }
 
+.form-control {
+  margin-top: 2rem;
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+.form-control .input {
+  width: 100%;
+  padding: 0.825rem 12px;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  -webkit-border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  -ms-border-radius: .25rem;
+  -o-border-radius: .25rem;
+  margin-bottom: 1rem;
+}
+
+.form-control .input:placeholder {
+  color: #ced4da;
+  font-size: 300;
+}
+
+.hidePass {
+  position: relative;
+  top: -3.225rem;
+  left: 8rem;
+  color: #c4c4c4;
+}
+
+.consent {
+  font-family: 'Asap-Regular', sans-serif !important;
+  font-size: 14px;
+  line-height: 20px;
+}
 
 @media screen and (min-width: 768px) {
   .nav-container {
