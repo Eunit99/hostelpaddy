@@ -36,6 +36,11 @@ function togglePass() {
   }
 }
 
+// Going back
+function back() {
+  window.history.back();
+}
+
 
 /* // start verification if all input are filled
 function inputVer() {

@@ -485,8 +485,8 @@ a.onboard-link:link {
 }
 
 .button-primary:hover {
-  background-color: #000249;
-  color: #fff;
+  color: #000249;
+  background-color: rgb(32, 30, 30);
 }
 
 a.signup-link {
