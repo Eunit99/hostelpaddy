@@ -1,4 +1,3 @@
-$(function () {
   let copyRight = document.getElementById("copyright"),
     date = new Date(),
     copyrightYear = date.getFullYear();
@@ -30,4 +29,19 @@ $(function () {
     document.getElementById("countSec").innerHTML = seconds;
   }, 1000);
 
-}(jQuery))
+
+  // Authentication pages
+  function togglePass() {
+    let pwd = document.getElementById("pwd"),
+      displayText = document.getElementById("hidePass");
+    if (pwd.type === "password") {
+      pwd.type = "text";
+      displayText.innerText = "Hide";
+    } else {
+      pwd.type = "password";
+      displayText.innerText = "Show";
+    }
+  }
+
+// let secondPart = $("#secondPart");
+// secondPart.addClass("displayNone")

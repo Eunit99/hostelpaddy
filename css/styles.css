@@ -117,6 +117,35 @@ body {
   font-weight: bold !important;
 }
 
+.displayNone {
+  display: none;
+}
+
+.disabled-state {
+  background-color: #c4c4c4;
+  color: #4f4f4f;
+  cursor: not-allowed;
+}
+
+.enabled-state {
+  background-color: #000249;
+  color: #fff;
+  cursor: cursor;
+}
+
+.button-style {
+  outline: none;
+  border: 0;
+  padding: 12px 20px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+/* Utilities */
+
 .body-image {
   background-image: url(../assets/bg.svg);
   background-size: cover;
@@ -368,7 +397,7 @@ a.onboard-link:link {
   font-size: 1.425rem;
   line-height: 3rem;
   font-family: 'Asap-Bold', sans-serif !important;
-font-weight: 600;
+  font-weight: 600;
 }
 
 .onboard .onboard-text {
@@ -439,6 +468,25 @@ font-weight: 600;
   font-family: 'Asap-Regular', sans-serif !important;
   font-size: 14px;
   line-height: 20px;
+}
+
+.button-style {
+  padding: 18px 28px;
+}
+
+.continue-onboarding {
+  max-width: 200px;
+  margin: 2rem auto;
+}
+
+.button-primary {
+  background-color: #000249;
+  color: #fff;
+}
+
+.button-primary:hover {
+  background-color: #000249;
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
@@ -526,7 +574,16 @@ font-weight: 600;
   }
 
   .icon {
-    padding: 1.485rem 1.2rem;
+    padding: 1.085rem 1.025rem;
+  }
+
+  .hidePass {
+    left: 16rem;
+    cursor: pointer;
+  }
+
+  .onboard-container {
+    width: 75%;
   }
 }
 
@@ -539,4 +596,13 @@ font-weight: 600;
   .side-image {
     display: block;
   }
+
+  .hidePass {
+    left: 18rem;
+  }
+
+  .continue-onboarding {
+    margin: 3rem auto;
+  }
+
 }
