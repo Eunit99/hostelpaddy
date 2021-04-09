@@ -258,69 +258,6 @@ body {
   margin: 2rem auto;
 }
 
-@media screen and (min-width: 768px) {
-  .nav-container {
-    margin: 2rem auto 0;
-  }
-
-  .count-down .heading-text {
-    font-size: 3.425rem;
-  }
-
-  .count-down .desc-text {
-    font-size: 1.325rem;
-  }
-
-  .coming-soon-content {
-    margin-top: 4rem;
-  }
-
-  .coming-soon-content .website {
-    font-size: 2.825rem;
-    margin-bottom: 1.225rem;
-  }
-
-  .coming-soon-content .launching-soon {
-    font-size: 3.825rem;
-    font-weight: 900;
-  }
-
-  .coming-soon-content .newsletter-description {
-    font-size: 1.625rem;
-  }
-
-  .input-field-area .form-control input,
-  .input-field-area .form-control button {
-    margin: 0;
-    height: 70px;
-  }
-
-  .input-field-area .form-control input.input {
-    padding: 1.425rem;
-    width: 300px;
-    color: #fff;
-  }
-
-  .input-field-area .form-control button.submit {
-    padding: 1.425rem;
-  }
-
-  .input-field-area .form-control button.submit .bell {
-    width: 14px;
-    height: 14px;
-  }
-
-  .newsletter-container {
-    margin: 5rem auto;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-
-  .coming-soon-content .coming-soon-image {
-    display: block;
-  }
-}
 
 
 
@@ -392,37 +329,164 @@ a.login-button-text {
   text-align: center;
 }
 
-a.onboard-student:link {
+a.onboard-link:link {
   text-decoration: none;
 }
 
 .onboard {
+  display: flex;
+  align-items: center;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
-  height: 200px;
-  padding: 18px 12px;
+  max-width: 550px;
+  margin: 2rem auto auto;
+  padding: 1.125rem 1rem;
+  text-decoration: none;
 }
 
-.onboard-text-title {
-  color: #000249;
+.onboard:hover {
+  border: 2px solid #000249;
+}
+
+.onboard-title {
   font-size: 1.625rem;
 }
 
-/* Auth pages responsiveness */
+.onboard .onboard-text {
+  margin-left: 2rem;
+}
+
+.onboard .onboard-text-title {
+  color: #242423;
+  font-family: 'Asap-Medium', sans-serif !important;
+  font-size: 1.225rem;
+  margin-bottom: 12px;
+}
+
+.onboard .onboard-text-desc {
+  color: #242423a9;
+  font-weight: 300 !important;
+  font-family: 'Asap-Medium', sans-serif !important;
+}
+
+.icon {
+  width: 80px;
+  padding: 0.485rem 0.2rem;
+  color: #000249;
+  background-color: #fff;
+  border-radius: 20%;
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 20%;
+  -ms-border-radius: 20%;
+  -o-border-radius: 20%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.icon .icon-icon {
+  margin: auto;
+}
+
+
+@media screen and (min-width: 768px) {
+  .nav-container {
+    margin: 2rem auto 0;
+  }
+
+  .count-down .heading-text {
+    font-size: 3.425rem;
+  }
+
+  .count-down .desc-text {
+    font-size: 1.325rem;
+  }
+
+  .coming-soon-content {
+    margin-top: 4rem;
+  }
+
+  .coming-soon-content .website {
+    font-size: 2.825rem;
+    margin-bottom: 1.225rem;
+  }
+
+  .coming-soon-content .launching-soon {
+    font-size: 3.825rem;
+    font-weight: 900;
+  }
+
+  .coming-soon-content .newsletter-description {
+    font-size: 1.625rem;
+  }
+
+  .input-field-area .form-control input,
+  .input-field-area .form-control button {
+    margin: 0;
+    height: 70px;
+  }
+
+  .input-field-area .form-control input.input {
+    padding: 1.425rem;
+    width: 300px;
+    color: #fff;
+  }
+
+  .input-field-area .form-control button.submit {
+    padding: 1.425rem;
+  }
+
+  .input-field-area .form-control button.submit .bell {
+    width: 14px;
+    height: 14px;
+  }
+
+  .newsletter-container {
+    margin: 5rem auto;
+  }
+
+  .login-button-text {
+    padding: 16px 24px;
+  }
+
+  .onboard {
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    max-width: 550px;
+    margin: 3rem auto auto;
+    padding: 2.425rem 2rem;
+  }
+
+  .onboard-title {
+    font-size: 2.625rem;
+  }
+
+  .onboard .onboard-text-title {
+    font-size: 1.645rem;
+    margin-bottom: 18px;
+  }
+
+  .onboard .onboard-text-desc {
+    font-size: 1.425rem;
+  }
+
+  .icon {
+    padding: 1.485rem 1.2rem;
+  }
+}
 
 @media screen and (min-width: 1024px) {
+
+  .coming-soon-content .coming-soon-image {
+    display: block;
+  }
 
   .side-image {
     display: block;
   }
 }
-
-/**
- *
- * Auth pages End
- *
- */
