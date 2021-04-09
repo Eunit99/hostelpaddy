@@ -43,5 +43,32 @@
     }
   }
 
-// let secondPart = $("#secondPart");
-// secondPart.addClass("displayNone")
+
+  // start verification if all input are filled
+  function inputVer() {
+    let nameInput = document.getElementById("name").value.trim(),
+      emailInput = document.getElementById("email").value.trim(),
+      numInput = document.getElementById("num").value.trim(),
+      pwdInput = document.getElementById("pwd").value.trim(),
+      userStateInput = document.getElementById("userState").value.trim(),
+      onboardingBtn = document.getElementById("continueOnboarding"),
+      secondPart = document.getElementsByClassName("secondPart"),
+      firstPart = document.getElementsByClassName("firstPart");
+
+
+
+    if (nameInput && emailInput && numInput && pwdInput && userStateInput === "") {
+      // if these inputs ain't empty
+
+      onboardingBtn.classList.remove("disabled-state");
+      secondPart.classList.remove("displayNone");
+      firstPart.classList.add("displayNone");
+    }
+
+    console.log(userStateInput);
+
+    onboardingBtn.click
+  }
+
+
+  inputVer();

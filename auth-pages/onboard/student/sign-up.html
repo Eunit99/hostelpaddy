@@ -136,14 +136,14 @@
 
                 <!-- first part of signing up -->
                 <div class="first-part" id="firstPart">
-                  <input type="text" class="input" name="name" placeholder="Full name" required aria-required="true">
+                  <input id="name" type="text" class="input" name="name" placeholder="Full name" required aria-required="true">
 
-                  <input type="email" class="input" name="email" placeholder="Email" required aria-required="true">
+                  <input id="email" type="email" class="input" name="email" placeholder="Email" required aria-required="true">
 
-                  <input type="number" class="input" name="number" placeholder="+234 Phone" required
+                  <input id="num" type="tel" class="input" name="number" placeholder="+234 Phone" required
                     aria-required="true">
 
-                  <input type="password" class="input" name="password" id="pwd" placeholder="Password" required
+                  <input id="pwd" type="password" class="input" name="password" id="pwd" placeholder="Password" required
                     aria-required="true">
                   <span class="hidePass" id="hidePass" onclick="togglePass()">Show</span>
                 </div>
@@ -151,7 +151,7 @@
 
                 <!-- second part of signing up -->
                 <div class="secondPart displayNone" id="secondPart">
-                  <select name="state" id="" class="select input" type="select" value="Abia" required>
+                  <select id="userState" name="state" class="select input" type="select" value="Abia" required>
                     <option value="Abia">Abia</option>
                     <option value="Adamawa">Adamawa</option>
                     <option value="Anambra">Anambra</option>
