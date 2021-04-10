@@ -9,6 +9,7 @@
   position: absolute;
   right: 80px;
 }
+
 .about-us {
   background: #5da3d7;
   padding-top: 5rem;
@@ -136,35 +137,4 @@
   font-size: 24px;
   line-height: 130.6%;
   color: #4f4f4f;
-}
-
-footer {
-  background-color: #f9faf9;
-  padding-top: 5rem;
-  padding-left: 5rem;
-}
-
-footer a {
-  color: #242423;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 155.1%;
-}
-
-footer h5 {
-  color: #c4c4c4;
-  padding-bottom: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 155.1%;
-}
-
-.footer-txt {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 155.1%;
-  text-align: left;
 }
