@@ -2,7 +2,7 @@ continueOnboardingStudent();
 continueOnboardingHouseOwner();
 
 
-let onboardingBtn = document.getElementsByClassName("continue-onboarding"),
+let onboardingBtnStudent = document.getElementById("continueOnboardingStudent"),
   secondPart = document.getElementById("secondPart"),
   firstPart = document.getElementById("firstPart"),
   submitBtn = document.getElementById("submitBtn"),
@@ -87,7 +87,7 @@ function continueOnboardingStudent() {
     secondPart.classList.add("slideInUp");
 
     //What to do to onboarding btn
-    onboardingBtn.classList.add("fadeOutUp")
+    onboardingBtnStudent.classList.add("displayNone")
 
     //What to do to submit btn
     submitBtn.classList.remove("displayNone");

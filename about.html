@@ -8,16 +8,16 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HostelPaddy - Home</title>
+    <title>HostelPaddy - About us</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>HostelPaddy - Home</title>
+    <title>HostelPaddy - About us</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no,
             width=device-width, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="title" content="HostelPaddy - Home">
+    <meta name="title" content="HostelPaddy - About us">
     <meta name="author" content="@Eunit">
     <meta name="description" content=" ">
     <meta name="keywords" content=" ">
@@ -42,7 +42,7 @@
     <meta name="apple-mobile-web-app-title" content="Add to Home">
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="HostelPaddy - Home">
+    <meta property="og:title" content="HostelPaddy - About us">
     <meta property="og:url" content="https://hostelpaddy.com">
     <meta property="og:description" content=" ">
     <meta property="og:site_name" content=" ">
@@ -70,12 +70,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <!-- Default Stylesheet -->
-    <link type="text/css" href="css/about.css" rel="stylesheet" />
     <link type="text/css" href="css/styles.css" rel="stylesheet" />
+    <link type="text/css" href="css/about.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!--Navbar-->
     <section id="header" class="header">
       <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container d-flex justify-content-between">
@@ -118,6 +117,7 @@
       </nav>
     </section>
     <!--About Us-->
+
     <div class="container-fluid padding">
       <div class="row about-us text-center padding">
         <div class="col-12">
@@ -210,46 +210,60 @@
       </div>
     </div>
 
-    <footer>
-      <div class="container-fluid padding">
-        <div class="row padding">
+     <footer>
+      <div class="container">
+        <div class="row">
           <div class="col-md-4">
-            <img src="home-img/footer_logo.png" />
-            <p class="footer-txt">
-              Our goal is to make to make hostel accommodation accessible to all
-              students across the country.
-            </p>
+            <img src="home-img/footer_logo.png" class="mb-3">
+            <p class="footer-txt mb-3">Our goal is to make hostel accommodation accessible to all students
+              across the
+              country.</p>
             <div class="col-12 social padding">
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a title="Hostel Paddy on Instagram" class="social-link" href="https://instagram.com/hostelpaddy">
+                <i class="fab fa-instagram footer-icon"></i>
+              </a>
+              <a title="Hostel Paddy on Twitter" class="social-link" href="https://twitter.com/hostelpaddy">
+                <i class="fab fa-twitter footer-icon"></i>
+              </a>
+              <a title="Hostel Paddy on Facebook" class="social-link" href="https://facebook.com/hostelpaddy1">
+                <i class="fab fa-facebook footer-icon"></i>
+              </a>
             </div>
             <p>&copy; 2021 Team Chernobyl</p>
           </div>
           <div class="col-md-4">
             <h5>Products</h5>
-            <p><a href="#">About Us</a></p>
-            <p><a href="#">Sign up</a></p>
-            <p><a href="#">Login</a></p>
-            <p><a href="#">Blog</a></p>
-            <p><a href="#">Listed hostels</a></p>
+            <p><a href="about.html">About Us</a></p>
+            <p><a href="/auth-pages/onboarding.html">Sign up</a></p>
+            <p><a href="/auth-pages/onboarding.html">Login</a></p>
+            <p><a href="https://blog.hostelpaddy.com">Blog</a></p>
+            <p><a href="hostels.html">Listed hostels</a></p>
             <p><a href="#">House owners/agents</a></p>
           </div>
           <div class="col-md-4">
             <h5>Support</h5>
-            <p><a href="#">Contact Us</a></p>
-            <p><a href="#">FAQs</a></p>
-            <p><a href="#">Terms of services</a></p>
-            <p><a href="#">Privacy policy</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+            <p><a href="faqs.html">FAQs</a></p>
+            <p><a href="tos.html">Terms of services</a></p>
+            <p><a href="privacy.html">Privacy policy</a></p>
+            <!-- </div> -->
           </div>
         </div>
-      </div>
     </footer>
 
     <!-- Vendor scripts -->
     <script src="vendor/jquery/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    <script>
+      let copyRight = document.getElementById("copyright"),
+        date = new Date(),
+        copyrightYear = date.getFullYear();
+      copyRight.innerText = copyrightYear;
+    </script>
+
   </body>
 
 </html>
