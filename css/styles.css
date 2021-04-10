@@ -398,6 +398,7 @@ a.onboard-link:link {
   line-height: 3rem;
   font-family: 'Asap-Bold', sans-serif !important;
   font-weight: 600;
+  line-height: 2.225rem;
 }
 
 .onboard .onboard-text {
@@ -419,6 +420,7 @@ a.onboard-link:link {
 
 .icon {
   width: 60px;
+  max-height: 50px;
   padding: 0.485rem 0.2rem;
   color: #000249;
   background-color: #fff;
@@ -482,14 +484,16 @@ a.onboard-link:link {
 .button-primary {
   background-color: #000249;
   color: #fff;
+  cursor: pointer;
 }
 
 .button-primary:hover {
-  color: #000249;
+  color: #fff;
   background-color: rgb(32, 30, 30);
 }
 
-a.signup-link {
+a.signup-link:link,
+a.forgot-pass-link:link {
   text-decoration: none;
 }
 
@@ -497,7 +501,9 @@ a.signup-link:hover {
   color: #000249;
 }
 
-
+.sub-title {
+  color: rgb(32, 30, 30)
+}
 
 @media screen and (min-width: 768px) {
   .nav-container {
@@ -572,6 +578,7 @@ a.signup-link:hover {
 
   .onboard-title {
     font-size: 2.625rem;
+    margin-bottom: 1.625rem;
   }
 
   .onboard .onboard-text-title {
