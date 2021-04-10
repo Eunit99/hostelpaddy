@@ -1,19 +1,16 @@
 continueOnboardingStudent();
 continueOnboardingHouseOwner();
 
-
 let onboardingBtnStudent = document.getElementById("continueOnboardingStudent"),
-  secondPart = document.getElementById("secondPart"),
-  firstPart = document.getElementById("firstPart"),
-  submitBtn = document.getElementById("submitBtn"),
-  submitBtnHouseOwner = document.getElementById("submitBtnHouseOwner");
-
-
+    secondPart = document.getElementById("secondPart"),
+    firstPart = document.getElementById("firstPart"),
+    submitBtn = document.getElementById("submitBtn"),
+    submitBtnHouseOwner = document.getElementById("submitBtnHouseOwner");
 
 // Authentication pages
 function togglePass() {
   let pwd = document.getElementById("pwd"),
-    displayText = document.getElementById("hidePass");
+      displayText = document.getElementById("hidePass");
   if (pwd.type === "password") {
     pwd.type = "text";
     displayText.innerText = "Hide";
@@ -24,10 +21,7 @@ function togglePass() {
 }
 
 // Going back/ clicking on back button
-function back() {
-  window.history.back();
-}
-
+function back() { window.history.back(); }
 
 /* // start verification if all input are filled
 function inputVer() {
@@ -42,7 +36,8 @@ function inputVer() {
 
 
 
-  if (nameInput && emailInput && numInput && pwdInput && userStateInput === "") {
+  if (nameInput && emailInput && numInput && pwdInput && userStateInput ===
+"") {
     // if these inputs ain't empty
 
     onboardingBtn.classList.remove("disabled-state");
@@ -59,13 +54,10 @@ function inputVer() {
 
 // inputVer();
 
-
-
-
 // Authentication pages
 function togglePass() {
   let pwd = document.getElementById("pwd"),
-    displayText = document.getElementById("hidePass");
+      displayText = document.getElementById("hidePass");
   if (pwd.type === "password") {
     pwd.type = "text";
     displayText.innerText = "Hide";
@@ -76,52 +68,46 @@ function togglePass() {
 }
 
 function continueOnboardingStudent() {
-  $("#continueOnboardingStudent").click(function () {
-
+  $("#continueOnboardingStudent").click(function() {
     // What to happen to first part
     firstPart.classList.add("displayNone");
-
 
     // What to happen to second part
     secondPart.classList.remove("displayNone");
     secondPart.classList.add("slideInUp");
 
-    //What to do to onboarding btn
+    // What to do to onboarding btn
     onboardingBtnStudent.classList.add("displayNone")
 
-    //What to do to submit btn
+    // What to do to submit btn
     submitBtn.classList.remove("displayNone");
   })
 }
 
-
 function continueOnboardingHouseOwner() {
-  $("#continueOnboardingHouseOwner").click(function () {
-
+  $("#continueOnboardingHouseOwner").click(function() {
     // What to happen to first part
     firstPart.classList.add("displayNone");
-
 
     // What to happen to second part
     secondPart.classList.remove("displayNone");
     secondPart.classList.add("slideInUp");
 
-    //What to do to onboarding btn
+    // What to do to onboarding btn
     onboardingBtn.classList.add("fadeOutUp")
 
-    //Second part for house agent/owner
+    // Second part for house agent/owner
     let subTitle = document.getElementById("subTitle"),
-      onboardTitle = document.getElementById("onboardTitle");
+        onboardTitle = document.getElementById("onboardTitle");
 
-    //What to happen when onboarding button is clicked
-    //Change onboardTitle text
+    // What to happen when onboarding button is clicked
+    // Change onboardTitle text
     onboardTitle.innerText = "Confirm your number"
 
-    //Change subTitle text
+    // Change subTitle text
     subTitle.innerText = `Enter 4 digit code sent to 0800000123` //${numInput}
 
-
-    //What to do to submit btn
+    // What to do to submit btn
     // submitBtn.classList.remove("displayNone");
   })
 }
