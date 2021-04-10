@@ -1,3 +1,13 @@
+continueOnboardingStudent();
+continueOnboardingHouseOwner();
+
+
+let onboardingBtn = document.getElementsByClassName("continue-onboarding"),
+  secondPart = document.getElementById("secondPart"),
+  firstPart = document.getElementById("firstPart"),
+  submitBtn = document.getElementById("submitBtn"),
+  submitBtnHouseOwner = document.getElementById("submitBtnHouseOwner");
+
 
 
 // Authentication pages
@@ -13,7 +23,7 @@ function togglePass() {
   }
 }
 
-// Going back
+// Going back/ clicking on back button
 function back() {
   window.history.back();
 }
@@ -47,7 +57,6 @@ function inputVer() {
   })
 } */
 
-
 // inputVer();
 
 
@@ -66,27 +75,53 @@ function togglePass() {
   }
 }
 
-$("#continueOnboarding").click(function () {
+function continueOnboardingStudent() {
+  $("#continueOnboardingStudent").click(function () {
 
-  let onboardingBtn = document.getElementById("continueOnboarding"),
-    secondPart = document.getElementById("secondPart"),
-    firstPart = document.getElementById("firstPart"),
-    submitBtn = document.getElementById("submitBtn")
-
-
-  // What to happen to first part
-  firstPart.classList.add("displayNone");
+    // What to happen to first part
+    firstPart.classList.add("displayNone");
 
 
+    // What to happen to second part
+    secondPart.classList.remove("displayNone");
+    secondPart.classList.add("slideInUp");
 
-  // What to happen to second part
-  secondPart.classList.remove("displayNone");
-  secondPart.classList.add("slideInUp");
+    //What to do to onboarding btn
+    onboardingBtn.classList.add("fadeOutUp")
 
-  //What to do to onboarding btn
-  continueOnboarding.classList.add("fadeOut")
+    //What to do to submit btn
+    submitBtn.classList.remove("displayNone");
+  })
+}
 
-  //What to do to submit btn
-  submitBtn.classList.remove("displayNone")
 
-})
+function continueOnboardingHouseOwner() {
+  $("#continueOnboardingHouseOwner").click(function () {
+
+    // What to happen to first part
+    firstPart.classList.add("displayNone");
+
+
+    // What to happen to second part
+    secondPart.classList.remove("displayNone");
+    secondPart.classList.add("slideInUp");
+
+    //What to do to onboarding btn
+    onboardingBtn.classList.add("fadeOutUp")
+
+    //Second part for house agent/owner
+    let subTitle = document.getElementById("subTitle"),
+      onboardTitle = document.getElementById("onboardTitle");
+
+    //What to happen when onboarding button is clicked
+    //Change onboardTitle text
+    onboardTitle.innerText = "Confirm your number"
+
+    //Change subTitle text
+    subTitle.innerText = `Enter 4 digit code sent to 0800000123` //${numInput}
+
+
+    //What to do to submit btn
+    // submitBtn.classList.remove("displayNone");
+  })
+}
