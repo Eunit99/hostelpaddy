@@ -658,10 +658,6 @@ a.signup-link:hover {
   margin-left: 1.625rem;
 }
 
-.navbar-brand {
-  /* margin-right: 20rem; */
-}
-
 .navbar-toggler .navbar-toggler-icon {
   display: block !important;
   width: auto;
@@ -903,6 +899,10 @@ footer {
   padding-left: 1rem;
 }
 
+footer a:link {
+  text-decoration: none;
+}
+
 footer a {
   color: #242423;
   font-style: normal;
@@ -911,10 +911,10 @@ footer a {
 }
 
 footer h5 {
-  color: #c4c4c4;
+  color: #242423;
+  font-weight: bold;
   padding-bottom: 1rem;
   font-style: normal;
-  font-weight: 500;
   font-size: 18px;
   line-height: 155.1%;
 }
