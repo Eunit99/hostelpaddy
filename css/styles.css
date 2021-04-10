@@ -113,6 +113,10 @@ body {
 
 /* Utilities */
 
+.remove-mt {
+  margin-top: -1.425rem;
+}
+
 .bold {
   font-weight: bold !important;
 }

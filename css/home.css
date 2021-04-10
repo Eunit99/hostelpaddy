@@ -276,7 +276,6 @@ footer {
 footer a {
   color: #242423;
   font-style: normal;
-  font-weight: 900;
   font-size: 18px;
   line-height: 155.1%;
 }
@@ -309,7 +308,6 @@ footer a.social-link {
 
 .footer-txt {
   font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   line-height: 155.1%;
   text-align: left;
