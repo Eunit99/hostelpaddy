@@ -440,7 +440,7 @@ a.onboard-link:link {
   margin: auto;
 }
 
-.form-control {
+.form-control.sign-up {
   margin-top: 2rem;
   border: 0 !important;
   padding: 0 !important;
