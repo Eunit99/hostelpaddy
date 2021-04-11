@@ -740,10 +740,7 @@ a:hover {
 
 /* Header */
 
-.header {
-  padding-top: 0.525rem;
-  padding-bottom: 0.525rem;
-}
+.header {}
 
 /*Intro styling*/
 .intro {
