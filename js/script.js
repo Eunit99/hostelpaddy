@@ -5,7 +5,9 @@ let onboardingBtnStudent = document.getElementById("continueOnboardingStudent"),
   secondPart = document.getElementById("secondPart"),
   firstPart = document.getElementById("firstPart"),
   submitBtn = document.getElementById("submitBtn"),
-  submitBtnHouseOwner = document.getElementById("submitBtnHouseOwner");
+  submitBtnHouseOwner = document.getElementById("submitBtnHouseOwner"),
+  consentContainer = document.getElementById("consentContainer"),
+  iconContainer = document.getElementById("iconContainer");
 
 // Authentication pages
 function togglePass() {
@@ -25,7 +27,7 @@ function back() {
   window.history.back();
 }
 
-/* // start verification if all input are filled
+// start verification if all input are filled
 function inputVer() {
   let nameInput = document.getElementById("name").value.trim(),
     emailInput = document.getElementById("email").value.trim(),
@@ -39,7 +41,7 @@ function inputVer() {
 
 
   if (nameInput && emailInput && numInput && pwdInput && userStateInput ===
-"") {
+    "") {
     // if these inputs ain't empty
 
     onboardingBtn.classList.remove("disabled-state");
@@ -52,7 +54,7 @@ function inputVer() {
     secondPart.classList.remove("displayNone");
     firstPart.classList.add("displayNone");
   })
-} */
+}
 
 // inputVer();
 
@@ -96,7 +98,7 @@ function continueOnboardingHouseOwner() {
     secondPart.classList.add("slideInUp");
 
     // What to do to onboarding btn
-    onboardingBtn.classList.add("fadeOutUp");
+    // onboardingBtn.classList.add("fadeOutUp");
 
     // Second part for house agent/owner
     let subTitle = document.getElementById("subTitle"),
@@ -107,9 +109,15 @@ function continueOnboardingHouseOwner() {
     onboardTitle.innerText = "Confirm your number";
 
     // Change subTitle text
-    subTitle.innerText = `Enter 4 digit code sent to 0800000123`; //${numInput}
+    subTitle.innerText = `Enter 4 digit code sent to ${numInput}`;
 
     // What to do to submit btn
     // submitBtn.classList.remove("displayNone");
+
+    //What to do to consent container
+    consentContainer.classList.add("displayNone"); //hide sign up consent container
+
+    //What to do to icon container
+    iconContainer.classList.add("displayNone"); //hide icon container
   });
 }

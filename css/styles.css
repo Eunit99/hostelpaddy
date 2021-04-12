@@ -470,7 +470,8 @@ a.onboard-link:link {
   color: #c4c4c4;
 }
 
-.consent {
+.consent,
+.link-text {
   font-family: 'Asap-Regular', sans-serif !important;
   font-size: 14px;
   line-height: 20px;
@@ -497,11 +498,13 @@ a.onboard-link:link {
 }
 
 a.signup-link:link,
+a.link:link,
 a.forgot-pass-link:link {
   text-decoration: none;
 }
 
-a.signup-link:hover {
+a.signup-link:hover,
+a.link:hover {
   color: #000249;
 }
 
@@ -740,10 +743,7 @@ a:hover {
 
 /* Header */
 
-.header {
-  padding-top: 0.525rem;
-  padding-bottom: 0.525rem;
-}
+.header {}
 
 /*Intro styling*/
 .intro {

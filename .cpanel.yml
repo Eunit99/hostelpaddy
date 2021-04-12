@@ -2,7 +2,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/hostelpa/public_html/
+    - export DEPLOYPATH=/home/hostelpa/public_html/app
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R fonts $DEPLOYPATH
