@@ -27,7 +27,7 @@ function back() {
   window.history.back();
 }
 
-/* // start verification if all input are filled
+// start verification if all input are filled
 function inputVer() {
   let nameInput = document.getElementById("name").value.trim(),
     emailInput = document.getElementById("email").value.trim(),
@@ -41,7 +41,7 @@ function inputVer() {
 
 
   if (nameInput && emailInput && numInput && pwdInput && userStateInput ===
-"") {
+    "") {
     // if these inputs ain't empty
 
     onboardingBtn.classList.remove("disabled-state");
@@ -54,7 +54,7 @@ function inputVer() {
     secondPart.classList.remove("displayNone");
     firstPart.classList.add("displayNone");
   })
-} */
+}
 
 // inputVer();
 
@@ -109,7 +109,7 @@ function continueOnboardingHouseOwner() {
     onboardTitle.innerText = "Confirm your number";
 
     // Change subTitle text
-    subTitle.innerText = `Enter 4 digit code sent to 0800000123`; //${numInput}
+    subTitle.innerText = `Enter 4 digit code sent to ${numInput}`;
 
     // What to do to submit btn
     // submitBtn.classList.remove("displayNone");
