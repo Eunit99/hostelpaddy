@@ -292,8 +292,9 @@ body {
   margin: 2rem auto;
 }
 
-
-
+.navbar-toggler {
+  border: 0
+}
 
 /**
  *
