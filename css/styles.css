@@ -441,7 +441,8 @@ a.onboard-link:link {
   margin: auto;
 }
 
-.form-control.sign-up {
+.form-control.sign-up,
+.form-control.login {
   margin-top: 2rem;
   border: 0 !important;
   padding: 0 !important;
