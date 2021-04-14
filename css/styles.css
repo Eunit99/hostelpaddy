@@ -806,12 +806,10 @@ a:hover {
   color: #242423;
 }
 
-.students p {
-  font-family: Asap;
-  font-style: normal;
-  font-weight: normal;
+.text-desc {
   font-size: 18px;
-  color: #797a9d;
+  line-height: 24px;
+  color: #242424a4;
 }
 
 .house-owners {
@@ -823,14 +821,6 @@ a:hover {
   font-weight: 600;
   line-height: 120%;
   color: #242423;
-}
-
-.house-owners p {
-  font-family: Asap;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  color: #797a9d;
 }
 
 .learn-more-btn {
