@@ -644,16 +644,16 @@ a.link:hover {
   padding-bottom: 2rem;
 }
 
+
 /*Nav-bar styling*/
 .signup {
-  position: absolute;
-  right: 80px;
   padding: 8px 24px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+  display: block;
 }
 
 .nav-item {
@@ -741,6 +741,10 @@ a:hover {
   color: #fff;
 }
 
+.navbar-collapse.collapse.show+div.mobile-signup {
+  margin-left: 2rem;
+  margin-top: 12px;
+}
 
 /* Header */
 
