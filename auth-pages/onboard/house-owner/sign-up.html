@@ -191,7 +191,7 @@
                   </div>
 
                   <!-- Please add ".disabled-state" after you must have sorted the script.js file out -->
-                  <div class="continue-onboarding button-style enabled-state animated" id="continueOnboardingOne">
+                  <div class="continue-onboarding button-style enabled-state animated" id="continueAfterNumber">
                     Continue
                   </div>
                 </div>
@@ -200,33 +200,41 @@
 
                 <!-- third part of signing up -->
                 <div class="thirdPart animated displayNone" id="thirdPart">
-                  <select id="userState" name="state" class="select input" type="select" value="Abia" required>
-                    <option value="Abia">Abia</option>
-                    <option value="Adamawa">Adamawa</option>
-                    <option value="Anambra">Anambra</option>
-                    <option value="Enugu">Enugu</option>
-                    <option value="Imo">Imo</option>
-                  </select>
+                  <input id="pwd" type="password" class="input" name="password" placeholder="Password" required
+                    aria-required="true">
+                  <span class="hidePass" id="hidePass" onclick="togglePass()">Show</span>
 
                   <!-- Please add ".disabled-state" after you must have sorted the script.js file out -->
-                  <div class="continue-onboarding button-style enabled-state animated" id="continueOnboarding">Continue
+                  <div class="continue-onboarding button-style enabled-state animated" id="continueOnboardingAfterPass">
+                    Continue
                   </div>
                 </div>
                 <!-- /third part of signing up -->
 
                 <!-- fourth part of signing up -->
                 <div class="fourthPart animated displayNone" id="fourthPart">
-                  <select id="userState" name="state" class="select input" type="select" value="Abia" required>
-                    <option value="Abia">Abia</option>
-                    <option value="Adamawa">Adamawa</option>
-                    <option value="Anambra">Anambra</option>
-                    <option value="Enugu">Enugu</option>
-                    <option value="Imo">Imo</option>
-                  </select>
 
-                  <!-- Please add ".disabled-state" after you must have sorted the script.js file out -->
-                  <div class="continue-onboarding button-style enabled-state animated" id="continueOnboarding">Continue
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="link-text text-left mt-4 text-center" id="linktextContainer"> <a href=""
+                              id="skipPhotoUpload" class="link">Skip and
+                              do this later</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-block mt-5">
+                        <button type="submit" class="mt-3 button-primary displayNone button-style"
+                          id="submitBtnHouseOwner">Finish</button>
+                      </div>
+                    </div>
                   </div>
+
                 </div>
                 <!-- /fourth part of signing up -->
               </div>
@@ -237,8 +245,6 @@
                   service</a> and <a href="../../../privacy.html" class="signup-link">Privacy policy</a>
               </div>
 
-              <button type="submit" class="mt-3 button-primary displayNone button-style"
-                id="submitBtnHouseOwner">Finish</button>
               <!-- /Onboarding content -->
 
             </div>
@@ -252,7 +258,7 @@
     <script src="../../../vendor/jquery/jquery-3.1.1.min.js"></script>
     <script src="../../../vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="../../../js/script.js"></script>
+    <script src="js/script.js"></script>
 
   </body>
 
