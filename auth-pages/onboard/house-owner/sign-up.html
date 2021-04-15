@@ -23,7 +23,7 @@
     <meta name="keywords" content=" ">
     <meta http-equiv="Content-Type" content="text/html">
     <meta name="theme-color" content="#0f4392">
-    <link rel="manifest" href="../manifest.json">
+    <link rel="manifest" href="../../../manifest.json">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="mobile-web-app-capable" content="yes">
@@ -75,6 +75,7 @@
     <link type="text/css" rel="stylesheet" href="../../../vendor/normalize/css/normalize.min.css">
     <link type="text/css" rel="stylesheet" href="../../../vendor/linearicons/css/linearicons.min.css" />
     <link type="text/css" rel="stylesheet" href="../../../vendor/fontawesome/css/fontawesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/dropzone.min.css" />
 
   </head>
 
@@ -216,8 +217,8 @@
 
                   <div class="container">
                     <div class="row">
-                      <div class="col-12">
-
+                      <div class="col-12 dropzone" action="" id="myDropzone">
+                        <input id="photo" type="file" class="" name="photo" required aria-required="true">
                       </div>
                       <div class="row">
                         <div class="col-12">
@@ -254,10 +255,14 @@
       </div>
     </div>
     <!-- /container -->
-
+    <!-- Vendor scripts -->
     <script src="../../../vendor/jquery/jquery-3.1.1.min.js"></script>
     <script src="../../../vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="js/dropzone.min.js"></script>
+    <script src="js/dropzone-amd-module.min.js"></script>
+
+    <!-- Default script -->
     <script src="js/script.js"></script>
 
   </body>
