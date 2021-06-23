@@ -1,5 +1,6 @@
 {
-  "icons": [{
+  "icons": [
+    {
       "src": "img/logo.png",
       "sizes": "16x16",
       "type": "image/png"

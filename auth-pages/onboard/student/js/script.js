@@ -38,10 +38,13 @@ function inputVer() {
     secondPart = document.getElementById("secondPart"),
     firstPart = document.getElementById("firstPart");
 
-
-
-  if (nameInput && emailInput && numInput && pwdInput && userStateInput ===
-    "") {
+  if (
+    nameInput &&
+    emailInput &&
+    numInput &&
+    pwdInput &&
+    userStateInput === ""
+  ) {
     // if these inputs ain't empty
 
     onboardingBtn.classList.remove("disabled-state");
@@ -53,7 +56,7 @@ function inputVer() {
   onboardingBtn.click(function () {
     secondPart.classList.remove("displayNone");
     firstPart.classList.add("displayNone");
-  })
+  });
 }
 
 inputVer();
@@ -114,10 +117,10 @@ function continueOnboardingHouseOwner() {
     // What to do to submit btn
     // submitBtn.classList.remove("displayNone");
 
-    //What to do to consent container
-    consentContainer.classList.add("displayNone"); //hide sign up consent container
+    // What to do to consent container
+    consentContainer.classList.add("displayNone"); // hide sign up consent container
 
-    //What to do to icon container
-    iconContainer.classList.add("displayNone"); //hide icon container
+    // What to do to icon container
+    iconContainer.classList.add("displayNone"); // hide icon container
   });
 }
