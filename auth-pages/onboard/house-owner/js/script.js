@@ -1,6 +1,5 @@
 continueOnboardingHouseOwner();
 
-
 let onboardingBtnStudent = document.getElementById("continueOnboardingStudent"),
   secondPart = document.getElementById("secondPart"),
   firstPart = document.getElementById("firstPart"),
@@ -12,7 +11,6 @@ let onboardingBtnStudent = document.getElementById("continueOnboardingStudent"),
   iconContainer = document.getElementById("iconContainer"),
   subTitle = document.getElementById("subTitle"),
   onboardTitle = document.getElementById("onboardTitle");
-
 
 // Authentication pages
 function togglePass() {
@@ -43,10 +41,13 @@ function inputVer() {
     secondPart = document.getElementById("secondPart"),
     firstPart = document.getElementById("firstPart");
 
-
-
-  if (nameInput && emailInput && numInput && pwdInput && userStateInput ===
-    "") {
+  if (
+    nameInput &&
+    emailInput &&
+    numInput &&
+    pwdInput &&
+    userStateInput === ""
+  ) {
     // if these inputs ain't empty
 
     onboardingBtn.classList.remove("disabled-state");
@@ -58,7 +59,7 @@ function inputVer() {
   onboardingBtn.click(function () {
     secondPart.classList.remove("displayNone");
     firstPart.classList.add("displayNone");
-  })
+  });
 }
 
 inputVer();
@@ -76,7 +77,6 @@ function togglePass() {
   }
 }
 
-
 function continueOnboardingHouseOwner() {
   $("#continueOnboardingHouseOwner").click(function () {
     // What to happen to first part
@@ -89,7 +89,6 @@ function continueOnboardingHouseOwner() {
     // What to do to onboarding btn
     // onboardingBtn.classList.add("fadeOutUp");
 
-
     // What to happen when onboarding button is clicked
     // Change onboardTitle text
     onboardTitle.innerText = "Confirm your number";
@@ -100,16 +99,14 @@ function continueOnboardingHouseOwner() {
     // What to do to submit btn
     // submitBtn.classList.remove("displayNone");
 
-    //What to do to consent container
-    consentContainer.classList.add("displayNone"); //hide sign up consent container
+    // What to do to consent container
+    consentContainer.classList.add("displayNone"); // hide sign up consent container
 
-    //What to do to icon container
-    iconContainer.classList.add("displayNone"); //hide icon container
+    // What to do to icon container
+    iconContainer.classList.add("displayNone"); // hide icon container
 
     continueAfterNumber();
-
   });
-
 }
 
 function continueAfterNumber() {
@@ -121,11 +118,9 @@ function continueAfterNumber() {
     thirdPart.classList.remove("displayNone");
     thirdPart.classList.add("slideInUp");
 
-
     // What to happen when onboarding button is clicked
     // Change onboardTitle text
     onboardTitle.innerText = "Set up your password to continue";
-
 
     // Change subTitle text
     subTitle.innerText = ``;
@@ -133,7 +128,6 @@ function continueAfterNumber() {
     continueOnboardingAfterPass();
   });
 }
-
 
 function continueOnboardingAfterPass() {
   $("#continueOnboardingAfterPass").click(function () {
