@@ -730,7 +730,7 @@ a:hover {
 /*Intro styling*/
 
 .intro {
-    background-image: url("../home-img/background.png");
+    background-image: url("../img/home-img/background.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 2rem;
@@ -813,7 +813,7 @@ a:hover {
 }
 
 ul {
-    list-style-image: url("../home-img/check\ icon.png");
+    list-style-image: url("../img/home-img/check\ icon.png");
     margin-left: 20px;
 }
 
