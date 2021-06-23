@@ -1,7 +1,7 @@
 // Authentication pages
 function togglePass() {
   let pwd = document.getElementById("pwd"),
-      displayText = document.getElementById("hidePass");
+    displayText = document.getElementById("hidePass");
   if (pwd.type === "password") {
     pwd.type = "text";
     displayText.innerText = "Hide";
@@ -12,12 +12,14 @@ function togglePass() {
 }
 
 // Going back/ clicking on back button
-function back() { window.history.back(); }
+function back() {
+  window.history.back();
+}
 
 // Authentication pages
 function togglePass() {
   let pwd = document.getElementById("pwd"),
-      displayText = document.getElementById("hidePass");
+    displayText = document.getElementById("hidePass");
   if (pwd.type === "password") {
     pwd.type = "text";
     displayText.innerText = "Hide";
