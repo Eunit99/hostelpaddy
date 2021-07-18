@@ -1,4 +1,3 @@
-
 // Authentication pages
 function togglePass() {
   let pwd = document.getElementById("pwd"),
@@ -16,7 +15,6 @@ function togglePass() {
 function back() {
   window.history.back();
 }
-
 
 // Authentication pages
 function togglePass() {
