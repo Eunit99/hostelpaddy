@@ -1,25 +1,23 @@
 continueToAmenities();
 
 let firstPart = document.getElementById("personal-details"),
-    secondPart = document.getElementById("amenities"),
-    thirdPart = document.getElementById("choice"),
-    fourthPart = document.getElementById("photos"),
-    fifthPart = document.getElementById("payment"),
-
-    bullet1 = document.getElementById("bullet1"),
-    bullet2 = document.getElementById("bullet2"),
-    bullet3 = document.getElementById("bullet3"),
-    bullet4 = document.getElementById("bullet4"),
-    bullet5 = document.getElementById("bullet5"),
-
-    title1 = document.getElementById("title1"),
-    subtitle1 = document.getElementById("subtitle1"),
-    title2 = document.getElementById("title2"),
-    subtitle2 = document.getElementById("subtitle2"),
-    title3 = document.getElementById("title3"),
-    subtitle3 = document.getElementById("subtitle3"),
-    title4 = document.getElementById("title4"),
-    subtitle4 = document.getElementById("subtitle4");
+  secondPart = document.getElementById("amenities"),
+  thirdPart = document.getElementById("choice"),
+  fourthPart = document.getElementById("photos"),
+  fifthPart = document.getElementById("payment"),
+  bullet1 = document.getElementById("bullet1"),
+  bullet2 = document.getElementById("bullet2"),
+  bullet3 = document.getElementById("bullet3"),
+  bullet4 = document.getElementById("bullet4"),
+  bullet5 = document.getElementById("bullet5"),
+  title1 = document.getElementById("title1"),
+  subtitle1 = document.getElementById("subtitle1"),
+  title2 = document.getElementById("title2"),
+  subtitle2 = document.getElementById("subtitle2"),
+  title3 = document.getElementById("title3"),
+  subtitle3 = document.getElementById("subtitle3"),
+  title4 = document.getElementById("title4"),
+  subtitle4 = document.getElementById("subtitle4");
 
 // Clicking on back buttons
 function backToDetails() {
@@ -64,7 +62,7 @@ function backToPhotos() {
 
 // clicking on continue buttons
 function continueToAmenities() {
-  $("#continueToAmenities").click(function() {
+  $("#continueToAmenities").click(function () {
     firstPart.classList.add("displayNone");
 
     secondPart.classList.remove("displayNone");
@@ -75,14 +73,14 @@ function continueToAmenities() {
 
     title1.innerText = "Amenities";
     subtitle1.innerText =
-        "To list a shared hostel accomodation, we need you to provide some information on the hostel.";
+      "To list a shared hostel accomodation, we need you to provide some information on the hostel.";
 
     continueToChoice();
   });
 }
 
 function continueToChoice() {
-  $("#continueToChoice").click(function() {
+  $("#continueToChoice").click(function () {
     secondPart.classList.add("displayNone");
 
     thirdPart.classList.remove("displayNone");
@@ -93,14 +91,14 @@ function continueToChoice() {
 
     title2.innerText = "Choice of hostel mate";
     subtitle2.innerText =
-        "To list a shared hostel accomodation, we need you to provide some information on the hostel.";
+      "To list a shared hostel accomodation, we need you to provide some information on the hostel.";
 
     continueToPhotos();
   });
 }
 
 function continueToPhotos() {
-  $("#continueToPhotos").click(function() {
+  $("#continueToPhotos").click(function () {
     thirdPart.classList.add("displayNone");
 
     fourthPart.classList.remove("displayNone");
@@ -111,14 +109,14 @@ function continueToPhotos() {
 
     title3.innerText = "Photos & video";
     subtitle3.innerText =
-        "To list a shared hostel accomodation, we need you to provide some information on the hostel.";
+      "To list a shared hostel accomodation, we need you to provide some information on the hostel.";
 
     continueToPayment();
   });
 }
 
 function continueToPayment() {
-  $("#continueToPayment").click(function() {
+  $("#continueToPayment").click(function () {
     fourthPart.classList.add("displayNone");
 
     fifthPart.classList.remove("displayNone");
@@ -129,6 +127,6 @@ function continueToPayment() {
 
     title4.innerText = "Payment";
     subtitle4.innerText =
-        "You are required to make payment to finish your hostel listing. lease note that we do not store your card details.";
+      "You are required to make payment to finish your hostel listing. lease note that we do not store your card details.";
   });
 }
