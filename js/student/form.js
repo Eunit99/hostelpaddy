@@ -21,111 +21,114 @@ let firstPart = document.getElementById("personal-details"),
     title4 = document.getElementById("title4"),
     subtitle4 = document.getElementById("subtitle4");
 
-
 // Clicking on back buttons
 function backToDetails() {
-    secondPart.classList.add("displayNone");
+  secondPart.classList.add("displayNone");
 
-    firstPart.classList.remove("displayNone");
-    firstPart.classList.add("slideInLeft");
+  firstPart.classList.remove("displayNone");
+  firstPart.classList.add("slideInLeft");
 
-    bullet2.classList.remove("text-info");
-    bullet2.classList.add("text-black-50");
+  bullet2.classList.remove("text-info");
+  bullet2.classList.add("text-black-50");
 }
 
 function backToAmenities() {
-    thirdPart.classList.add("displayNone");
+  thirdPart.classList.add("displayNone");
 
-    secondPart.classList.remove("displayNone");
-    secondPart.classList.add("slideInRight");
+  secondPart.classList.remove("displayNone");
+  secondPart.classList.add("slideInRight");
 
-    bullet3.classList.remove("text-info");
-    bullet3.classList.add("text-black-50");
+  bullet3.classList.remove("text-info");
+  bullet3.classList.add("text-black-50");
 }
 
 function backToChoice() {
-    fourthPart.classList.add("displayNone");
+  fourthPart.classList.add("displayNone");
 
-    thirdPart.classList.remove("displayNone");
-    thirdPart.classList.add("slideInRight");
+  thirdPart.classList.remove("displayNone");
+  thirdPart.classList.add("slideInRight");
 
-    bullet4.classList.remove("text-info");
-    bullet4.classList.add("text-black-50");
+  bullet4.classList.remove("text-info");
+  bullet4.classList.add("text-black-50");
 }
 
 function backToPhotos() {
-    fifthPart.classList.add("displayNone");
+  fifthPart.classList.add("displayNone");
 
-    fourthPart.classList.remove("displayNone");
-    fourthPart.classList.add("slideInRight");
+  fourthPart.classList.remove("displayNone");
+  fourthPart.classList.add("slideInRight");
 
-    bullet5.classList.remove("text-info");
-    bullet5.classList.add("text-black-50");
+  bullet5.classList.remove("text-info");
+  bullet5.classList.add("text-black-50");
 }
 
 // clicking on continue buttons
 function continueToAmenities() {
-    $("#continueToAmenities").click(function () {
-        firstPart.classList.add("displayNone");
+  $("#continueToAmenities").click(function() {
+    firstPart.classList.add("displayNone");
 
-        secondPart.classList.remove("displayNone");
-        secondPart.classList.add("slideInRight");
+    secondPart.classList.remove("displayNone");
+    secondPart.classList.add("slideInRight");
 
-        bullet2.classList.remove("text-black-50");
-        bullet2.classList.add("text-info");
+    bullet2.classList.remove("text-black-50");
+    bullet2.classList.add("text-info");
 
-        title1.innerText = "Amenities";
-        subtitle1.innerText = "To list a shared hostel accomodation, we need you to provide some information on the hostel.";
+    title1.innerText = "Amenities";
+    subtitle1.innerText =
+        "To list a shared hostel accomodation, we need you to provide some information on the hostel.";
 
-        continueToChoice();
-    });
+    continueToChoice();
+  });
 }
 
 function continueToChoice() {
-    $("#continueToChoice").click(function () {
-        secondPart.classList.add("displayNone");
+  $("#continueToChoice").click(function() {
+    secondPart.classList.add("displayNone");
 
-        thirdPart.classList.remove("displayNone");
-        thirdPart.classList.add("slideInRight");
+    thirdPart.classList.remove("displayNone");
+    thirdPart.classList.add("slideInRight");
 
-        bullet3.classList.remove("text-black-50");
-        bullet3.classList.add("text-info");
+    bullet3.classList.remove("text-black-50");
+    bullet3.classList.add("text-info");
 
-        title2.innerText = "Choice of hostel mate";
-        subtitle2.innerText = "To list a shared hostel accomodation, we need you to provide some information on the hostel.";
+    title2.innerText = "Choice of hostel mate";
+    subtitle2.innerText =
+        "To list a shared hostel accomodation, we need you to provide some information on the hostel.";
 
-        continueToPhotos();
-    });
+    continueToPhotos();
+  });
 }
 
 function continueToPhotos() {
-    $("#continueToPhotos").click(function () {
-        thirdPart.classList.add("displayNone");
+  $("#continueToPhotos").click(function() {
+    thirdPart.classList.add("displayNone");
 
-        fourthPart.classList.remove("displayNone");
-        fourthPart.classList.add("slideInRight");
+    fourthPart.classList.remove("displayNone");
+    fourthPart.classList.add("slideInRight");
 
-        bullet4.classList.remove("text-black-50");
-        bullet4.classList.add("text-info");
+    bullet4.classList.remove("text-black-50");
+    bullet4.classList.add("text-info");
 
-        title3.innerText = "Photos & video";
-        subtitle3.innerText = "To list a shared hostel accomodation, we need you to provide some information on the hostel.";
+    title3.innerText = "Photos & video";
+    subtitle3.innerText =
+        "To list a shared hostel accomodation, we need you to provide some information on the hostel.";
 
-        continueToPayment();
-    });
+    continueToPayment();
+  });
 }
 
 function continueToPayment() {
-    $("#continueToPayment").click(function () {
-        fourthPart.classList.add("displayNone");
+  $("#continueToPayment").click(function() {
+    fourthPart.classList.add("displayNone");
 
-        fifthPart.classList.remove("displayNone");
-        fifthPart.classList.add("slideInRight");
+    fifthPart.classList.remove("displayNone");
+    fifthPart.classList.add("slideInRight");
 
-        bullet5.classList.remove("text-black-50");
-        bullet5.classList.add("text-info");
+    bullet5.classList.remove("text-black-50");
+    bullet5.classList.add("text-info");
 
-        title4.innerText = "Payment";
-        subtitle4.innerText = "You are required to make payment to finish your hostel listing. lease note that we do not store your card details.";
-    });
+    title4.innerText = "Payment";
+    subtitle4.innerText =
+        "You are required to make payment to finish your hostel listing. lease note that we do not store your card details.";
+  });
 }
