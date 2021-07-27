@@ -79,6 +79,7 @@
 
     <!-- Default Stylesheet -->
     <link type="text/css" rel="stylesheet" href="css/homestyle.css">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -496,67 +497,53 @@
 
     <!-- footer -->
 
-    <div class="container footer">
-        <div class="row mb-md-3">
-            <div class="col-sm-12 col-md-4 col-lg-6">
-                <!-- goal -->
-                <div class="mt-5 mt-md-0">
-                    <div id="logo"></div>
-
-                    <!-- <span class="oi oi-arrow-thick-right"></span> -->
-                    <p class="text-secondary">Our goal is to make hostel accommodation accessible to all students across the country.
+    <footer>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/home-img/footer_logo.png" class="mb-3">
+                    <p class="footer-txt mb-3">Our goal is to make hostel accommodation accessible to all students across the country.
                     </p>
+                    <div class="col-12 social padding">
+                        <a title="Hostel Paddy on Instagram" class="social-link" href="https://instagram.com/hostelpaddy">
+                            <i class="fab fa-instagram footer-icon"></i>
+                        </a>
+                        <a title="Hostel Paddy on Twitter" class="social-link" href="https://twitter.com/hostelpaddy">
+                            <i class="fab fa-twitter footer-icon"></i>
+                        </a>
+                        <a title="Hostel Paddy on Facebook" class="social-link" href="https://facebook.com/hostelpaddy1">
+                            <i class="fab fa-facebook footer-icon"></i>
+                        </a>
+                    </div>
+                    <p>&copy; 2021 Team Chernobyl</p>
                 </div>
-
-                <!-- social media -->
-                <div class="social-media my-2">
-                    <a href="">
-                        <img src="./img/instagram.png" class="img-fluid mr-3" alt="" />
-                    </a>
-                    <a href="">
-                        <img src="./img/twitter.png" class="img-fluid mr-3" alt="" />
-                    </a>
-                    <a href="">
-                        <img src="./img/facebook.png" class="img-fluid mr-3" alt="" />
-                    </a>
+                <div class="col-md-4">
+                    <h5>Products</h5>
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="auth-pages/onboarding.html">Sign up</a></p>
+                    <p><a href="auth-pages/onboarding.html">Login</a></p>
+                    <p><a href="https://blog.hostelpaddy.com">Blog</a></p>
+                    <p><a href="hostels.html">Listed hostels</a></p>
+                    <p><a href="home.html">House owners/agents</a></p>
                 </div>
-                <div class="col-12 copyright-area text-left my-2 pt-3 d-md-block">
-                    &copy; <span id="copyright"></span> <span class="faded">Team Chernobyl</span>
+                <div class="col-md-4">
+                    <h5>Support</h5>
+                    <p><a href="contact.html">Contact Us</a></p>
+                    <p><a href="faqs.html">FAQs</a></p>
+                    <p><a href="tos.html">Terms of services</a></p>
+                    <p><a href="privacy.html">Privacy policy</a></p>
                 </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <ul>
-                    <li class="text-secondary mb-3">Products</li>
-                    <li class="mb-3">About us</li>
-                    <li class="mb-3">Sign up</li>
-                    <li class="mb-3">Login</li>
-                    <li class="mb-3">Blog</li>
-                    <li class="mb-3">Listed hostels</li>
-                    <li class="mb-3">House owners/agent</li>
-                </ul>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <ul>
-                    <li class="text-secondary mb-3">Support</li>
-                    <li class="mb-3">Contact us</li>
-                    <li class="mb-3">FAQs</li>
-                    <li class="mb-3">Terms of service</li>
-                    <li class="mb-3">Privacy policy</li>
-                </ul>
             </div>
         </div>
-    </div>
+    </footer>
 
-    <!-- Default script -->
     <script>
         let copyRight = document.getElementById("copyright"),
             date = new Date(),
             copyrightYear = date.getFullYear();
         copyRight.innerText = copyrightYear;
     </script>
-    <script src="vendor/jquery/jquery-3.1.1.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
 </body>
 
 </html>
